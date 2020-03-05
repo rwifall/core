@@ -33,7 +33,7 @@ class TradfriSensor(TradfriBaseDevice):
         super().__init__(device, api, gateway_id)
         if device.has_blind_control:
             self._unique_id = f"{gateway_id}-{device.id}-battery"
-        else
+        else:
             self._unique_id = f"{gateway_id}-{device.id}"
 
     @property
