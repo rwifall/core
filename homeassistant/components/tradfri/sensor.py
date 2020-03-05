@@ -31,7 +31,7 @@ class TradfriSensor(TradfriBaseDevice):
     def __init__(self, device, api, gateway_id):
         """Initialize the device."""
         super().__init__(device, api, gateway_id)
-        if device.has_blind_control
+        if device.has_blind_control:
             self._unique_id = f"{gateway_id}-{device.id}-battery"
         else
             self._unique_id = f"{gateway_id}-{device.id}"
